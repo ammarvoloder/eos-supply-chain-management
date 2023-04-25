@@ -1,0 +1,529 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "buyitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "caller",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "checkitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "checkrole",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "role",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "harvestitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "_sku",
+                    "type": "uint64"
+                },
+                {
+                    "name": "_farmerid",
+                    "type": "name"
+                },
+                {
+                    "name": "_farmname",
+                    "type": "string"
+                },
+                {
+                    "name": "_farminformation",
+                    "type": "string"
+                },
+                {
+                    "name": "_farmlatitude",
+                    "type": "string"
+                },
+                {
+                    "name": "_farmlongitude",
+                    "type": "string"
+                },
+                {
+                    "name": "_productnotes",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "item",
+            "base": "",
+            "fields": [
+                {
+                    "name": "upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "sku",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ownerid",
+                    "type": "name"
+                },
+                {
+                    "name": "farmerid",
+                    "type": "name"
+                },
+                {
+                    "name": "farmname",
+                    "type": "string"
+                },
+                {
+                    "name": "farminformation",
+                    "type": "string"
+                },
+                {
+                    "name": "farmlatitude",
+                    "type": "string"
+                },
+                {
+                    "name": "farmlongitude",
+                    "type": "string"
+                },
+                {
+                    "name": "productid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "productnotes",
+                    "type": "string"
+                },
+                {
+                    "name": "productprice",
+                    "type": "uint64"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "distributorid",
+                    "type": "name"
+                },
+                {
+                    "name": "retailerid",
+                    "type": "name"
+                },
+                {
+                    "name": "consumerid",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "packitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "caller",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "processitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "caller",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "purchaseitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "caller",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "receiveitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "caller",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "sellitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "caller",
+                    "type": "name"
+                },
+                {
+                    "name": "_price",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setconsumer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "consumer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "setdist",
+            "base": "",
+            "fields": [
+                {
+                    "name": "upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "dist",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "setprice",
+            "base": "",
+            "fields": [
+                {
+                    "name": "upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "payingaccount",
+                    "type": "name"
+                },
+                {
+                    "name": "price",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "setretailer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "retailer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "setstate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "payingaccount",
+                    "type": "name"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "shipitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "caller",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "upsertitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "upc",
+                    "type": "uint64"
+                },
+                {
+                    "name": "sku",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ownerid",
+                    "type": "name"
+                },
+                {
+                    "name": "farmerid",
+                    "type": "name"
+                },
+                {
+                    "name": "farmname",
+                    "type": "string"
+                },
+                {
+                    "name": "farminformation",
+                    "type": "string"
+                },
+                {
+                    "name": "farmlatitude",
+                    "type": "string"
+                },
+                {
+                    "name": "farmlongitude",
+                    "type": "string"
+                },
+                {
+                    "name": "productid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "productnotes",
+                    "type": "string"
+                },
+                {
+                    "name": "productprice",
+                    "type": "uint64"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "distributorid",
+                    "type": "name"
+                },
+                {
+                    "name": "retailerid",
+                    "type": "name"
+                },
+                {
+                    "name": "consumerid",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "upsertrole",
+            "base": "",
+            "fields": [
+                {
+                    "name": "role",
+                    "type": "string"
+                },
+                {
+                    "name": "account_name",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "user",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account_name",
+                    "type": "name"
+                },
+                {
+                    "name": "role",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "buyitem",
+            "type": "buyitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "checkitem",
+            "type": "checkitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "checkrole",
+            "type": "checkrole",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "harvestitem",
+            "type": "harvestitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "packitem",
+            "type": "packitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "processitem",
+            "type": "processitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "purchaseitem",
+            "type": "purchaseitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "receiveitem",
+            "type": "receiveitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "sellitem",
+            "type": "sellitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setconsumer",
+            "type": "setconsumer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setdist",
+            "type": "setdist",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setprice",
+            "type": "setprice",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setretailer",
+            "type": "setretailer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setstate",
+            "type": "setstate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "shipitem",
+            "type": "shipitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "upsertitem",
+            "type": "upsertitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "upsertrole",
+            "type": "upsertrole",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "items",
+            "type": "item",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "users",
+            "type": "user",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": [
+        {
+            "name": "checkitem",
+            "result_type": "bool"
+        },
+        {
+            "name": "checkrole",
+            "result_type": "bool"
+        }
+    ]
+}
