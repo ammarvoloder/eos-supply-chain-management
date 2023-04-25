@@ -1,1 +1,1 @@
-# eos-supply-chain-management
+# EOSIO Supply Chain Management
